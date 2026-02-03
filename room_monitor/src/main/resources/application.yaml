@@ -1,3 +1,5 @@
 spring:
   application:
     name: room_monitor
+  kafka:
+    bootstrap-servers: localhost:29092
