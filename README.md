@@ -24,7 +24,7 @@ Proyecto de sistema de alarmas de incendios usando Kafka.
 3. Esta compuesto por 3 microservicios:
 
 - **room-monitor:** Produce eventos `RoomTempEvent`
-- **room-temperature:** Consume eventos `RoomTempEvent` y produce eventos `RoomAlarmEvent` si la temperatura supera 39ºC
+- **room-temperature:** Consume eventos `RoomTempEvent` y produce eventos `RoomAlarmEvent` si la temperatura supera 35ºC
 - **room-alarm**: Consume eventos `RoomAlarmEvent` y activa las alarmas de las habitaciones. 
 
 
