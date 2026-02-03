@@ -27,6 +27,16 @@ Proyecto de sistema de alarmas de incendios usando Kafka.
 - **room-temperature:** Consume eventos `RoomTempEvent` y produce eventos `RoomAlarmEvent` si la temperatura supera 35ºC
 - **room-alarm**: Consume eventos `RoomAlarmEvent` y activa las alarmas de las habitaciones. 
 
+## Entorno local
 
+1. Iniciar kafka y kafka-ui
+```bash
+docker compose up
+```
+2. Ejecutar los proyectos room-monitor, room-temperature y room-alarm desde el IDE Intellij
+
+3. Acceder a kafka-ui desde: http://localhost:9000
+
+4. Acceder a la siguiente url: http://localhost:8080/swagger-ui/index.html
 
 

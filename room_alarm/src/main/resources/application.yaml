@@ -1,3 +1,8 @@
+server:
+  port: 8082
+
 spring:
   application:
     name: room_alarm
+  kafka:
+    bootstrap-servers: localhost:29092
