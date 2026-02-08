@@ -39,7 +39,7 @@ docker compose up
 
 4. Acceder al microservicio room-monitor: http://localhost:8080/swagger-ui/index.html
 
-5. Acceder a Kibana: http://localhost:8080/swagger-ui/index.html
+5. Acceder a Kibana: http://localhost:5601
    - Menú > Elastic Search > Index Managment > Indices
    - Click en uno de los indices y después el botón Discover Index
 
