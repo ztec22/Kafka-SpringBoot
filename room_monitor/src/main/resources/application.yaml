@@ -3,3 +3,6 @@ spring:
     name: room_monitor
   kafka:
     bootstrap-servers: localhost:29092
+  logstash:
+    host: localhost
+    port: 5000

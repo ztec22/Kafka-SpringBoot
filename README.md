@@ -29,7 +29,7 @@ Proyecto de sistema de alarmas de incendios usando Kafka.
 
 ## Entorno local
 
-1. Iniciar kafka y kafka-ui
+1. Iniciar kafka, kafka-ui, elasticsearch, logstash, kibana
 ```bash
 docker compose up
 ```
@@ -37,6 +37,10 @@ docker compose up
 
 3. Acceder a kafka-ui desde: http://localhost:9000
 
-4. Acceder a la siguiente url: http://localhost:8080/swagger-ui/index.html
+4. Acceder al microservicio room-monitor: http://localhost:8080/swagger-ui/index.html
+
+5. Acceder a Kibana: http://localhost:8080/swagger-ui/index.html
+   - Menú > Elastic Search > Index Managment > Indices
+   - Click en uno de los indices y después el botón Discover Index
 
 

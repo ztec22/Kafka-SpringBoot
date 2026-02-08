@@ -1,0 +1,23 @@
+<configuration>
+    <springProperty name="LOGSTASH_HOST" source="spring.logstash.host"/>
+    <springProperty name="LOGSTASH_PORT" source="spring.logstash.port"/>
+    <springProperty scope="context" name="application.name" source="spring.application.name"/>
+    <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <destination>${LOGSTASH_HOST}:${LOGSTASH_PORT}</destination>
+        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">
+            <providers>
+                <context />
+                <timestamp/>
+                <loggerName/>
+                <threadName/>
+                <logLevel/>
+                <message/>
+                <stackTrace/>
+            </providers>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="LOGSTASH"/>
+    </root>
+</configuration>
