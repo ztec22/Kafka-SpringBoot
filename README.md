@@ -1,6 +1,6 @@
 # Kafka-SpringBoot
 
-Proyecto de sistema de alarmas de incendios usando Kafka.
+Proyecto de sistema de alarmas de incendios usando Kafka para la comunicación y ELK Stack (ElasticSearch, Logstash, Kibana) para la monitorización.
 1. Compuesto por dos eventos:
 - **RoomTempEvent**: temperatura de la habitación
 ```
